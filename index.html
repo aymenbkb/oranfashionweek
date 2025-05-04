@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Africa Fashion Event - Haute Couture Edition</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+
+<body class="homepage">
+  <!-- Custom cursor element -->
+  <div class="custom-cursor"></div>
+
+  <!-- Preloader -->
+  <div class="preloader-container">
+    <div class="preloader-logo">NORTH AFRICA FASHION EVENT</div>
+  </div>
+
+  <!-- Hero Section with Runway Video Background -->
+<!-- Updated Hero Section -->
+<section id="hero" class="position-relative d-flex align-items-center">
+  <div class="hero-background">
+    <!-- Blue background with fluid shapes will be added via CSS -->
+  </div>
+  <div class="bubble">
+    <img src="./images/hero1.jpg" alt="Fashion 1" class="bubble-image" data-src="./images/hero1.jpg">
+  </div>
+  <div class="bubble">
+    <img src="./images/hero2.png" alt="Fashion 2" class="bubble-image" data-src="./images/hero2.png">
+  </div>
+  <div class="bubble">
+    <img src="./images/hero3.png" alt="Fashion 3" class="bubble-image" data-src="./images/hero3.png">
+  </div>
+  <div class="container position-relative z-index-1">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- Logo section -->
+        <div class="d-flex justify-content-between align-items-start mt-3 mb-5">
+          <div class="logo-container">
+            <h3 class="text-white fw-bold">OF//</h3>
+            <p class="text-uppercase text-white mb-0">
+              <span >ORAN</span>
+              <span >FASHION</span>
+              <span >WEEK</span>
+            </p>
+          </div>
+          <div class="arabic-text text-end">
+            <p class="text-white mb-0">
+              <span class="d-block">أسبوع</span>
+              <span class="d-block">الموضة</span>
+              <span class="d-block">وهران</span>
+            </p>
+          </div>
+        </div>
+        
+        <!-- Main title -->
+        <div class="main-title">
+          <h1 class="hero-title display-1 fw-bold text-white text-uppercase mb-4">
+            <span class="d-block">join the biggest fashion event in</span>
+            <span class="d-block">North Africa</span>
+          </h1>
+        </div>
+        
+        <!-- Date information -->
+        <div class="event-date mt-5 text-md-end">
+          <p class="text-white mb-2">F/W 2025</p>
+          <h2 class="text-white fw-bold display-4 mb-0">
+            <span>9-11</span>
+            <span class="d-block">MAY</span>
+            <span class="d-block">25</span>
+          </h2>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Fashion Show Calendar - Horizontal Slider -->
+<section id="fasolader" class="py-6">
+  <div class="container-fluid px-4">
+    <div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="sticky-top text-center pt-5">
+          <span class="badge bg-dark text-uppercase mb-3">FASHION SHOW</span>
+          <h2 class="section-title display-4 mb-4">Fashion Show Calendar</h2>
+          <p class="text-light opacity-75 mb-5">Explore our exclusive runway schedule featuring the most influential designers from across the continent.</p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="calendar-timeline">
+          <!-- Event Card 1 -->
+          <div class="event-card">
+            <div class="event-date">
+              <h3 class="event-day">08</h3>
+              <p class="event-month">MAY</p>
+            </div>
+            <div class="event-details">
+              <h4 class="designer-name">Opening & Preparations</h4>
+              <p class="event-location">Hotel Oran Bay (formerly Sheraton)</p>
+            </div>
+          </div>
+          
+          <!-- Event Card 2 -->
+          <div class="event-card">
+            <div class="event-date">
+              <h3 class="event-day">09</h3>
+              <p class="event-month">MAY</p>
+            </div>
+            <div class="event-details">
+              <h4 class="designer-name">Blousa Wahran Festival</h4>
+              <p class="event-location">Regional Theater of Oran</p>
+            </div>
+          </div>
+          
+          <!-- Event Card 3 -->
+          <div class="event-card">
+            <div class="event-date">
+              <h3 class="event-day">10</h3>
+              <p class="event-month">MAY</p>
+            </div>
+            <div class="event-details">
+              <h4 class="designer-name">Grand Designer Runway</h4>
+              <p class="event-location">Regional Theater of Oran</p>
+            </div>
+          </div>
+          
+          <!-- Event Card 4 -->
+          <div class="event-card">
+            <div class="event-date">
+              <h3 class="event-day">11</h3>
+              <p class="event-month">MAY</p>
+            </div>
+            <div class="event-details">
+              <h4 class="designer-name">History & Dialogue</h4>
+              <p class="event-location">Saint-Louis District – Oran</p>
+            </div>
+          </div>
+          
+          <!-- Event Card 5 -->
+          <div class="event-card">
+            <div class="event-date">
+              <h3 class="event-day">12</h3>
+              <p class="event-month">MAY</p>
+            </div>
+            <div class="event-details">
+              <h4 class="designer-name">Palestinian Embroidery Workshop</h4>
+              <p class="event-location">Palace of Culture</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="calendar-navigation d-flex justify-content-end mt-4">
+          <button id="prevBtn" class="btn btn-outline-light me-3"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextBtn" class="btn btn-outline-light"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Fashion Show Experience -->
+<section id="experience" class="py-6 bg-black">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-5 mb-md-0">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="experience-image-1"></div>
+          </div>
+          <div class="col-6">
+            <div class="experience-image-2 mt-5"></div>
+          </div>
+          <div class="col-12">
+            <div class="experience-image-3 mt-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ps-md-5">
+        <span class="badge bg-dark text-uppercase mb-3">The Experience</span>
+        <h2 class="section-title display-4 mb-4">ORAN FASHION WEEK</h2>
+        <p class="text-light opacity-75 mb-4">Oran Fashion Week returns for an exceptional new edition, highlighting fashion and culture. In 2025, this flagship event of North African fashion offers a unique experience that celebrates Algerian heritage, supports international causes, and showcases the diversity of global fashion.</p>
+        
+        <div class="experience-feature d-flex align-items-center mb-4">
+          <div class="experience-icon me-4">
+            <i class="fas fa-tshirt"></i>
+          </div>
+          <div>
+            <h5 class="mb-2">Runway Show</h5>
+            <p class="mb-0 text-light opacity-75">Experience breathtaking collections from top designers.</p>
+          </div>
+        </div>
+        
+        <div class="experience-feature d-flex align-items-center mb-4">
+          <div class="experience-icon me-4">
+            <i class="fas fa-store"></i>
+          </div>
+          <div>
+            <h5 class="mb-2">Expo OFW / Pop-Up Trade Show</h5>
+            <p class="mb-0 text-light opacity-75">Discover exclusive fashion products and brands.</p>
+          </div>
+        </div>
+        
+        <div class="experience-feature d-flex align-items-center mb-4">
+          <div class="experience-icon me-4">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div>
+            <h5 class="mb-2">Conference / Fashion Talks</h5>
+            <p class="mb-0 text-light opacity-75">Engage in insightful discussions with industry leaders.</p>
+          </div>
+        </div>
+      
+        <div class="timer-container mt-5">
+          <p class="text-uppercase mb-2">Begins in</p>
+          <div class="d-flex">
+            <div class="timer-box">
+              <span class="timer-value">12</span>
+              <span class="timer-label">days</span>
+            </div>
+            <div class="timer-box">
+              <span class="timer-value">04</span>
+              <span class="timer-label">hours</span>
+            </div>
+            <div class="timer-box">
+              <span class="timer-value">35</span>
+              <span class="timer-label">minutes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- The Program -->
+  <section id="program" class="py-6">
+
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <span class="badge bg-black text-uppercase mb-3">Schedule</span>
+          <h2 class="section-title display-4 mb-4">The Program</h2>
+          <p class="text-light opacity-75 mb-0">Discover our carefully curated events designed to showcase the best of North African fashion and culture.</p>
+        </div>
+      </div>
+      
+      <div class="row g-4 mt-3">
+        <div class="col-md-4">
+          <div class="program-card">
+            <div class="program-icon mb-4">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h4 class="mb-3">Runway Shows</h4>
+            <p class="text-light opacity-75">Experience breathtaking collections from established and emerging designers on our state-of-the-art runway.</p>
+            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="program-card">
+            <div class="program-icon mb-4">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h4 class="mb-3">Instagram Corner</h4>
+            <p class="text-light opacity-75">Step into the Instagram Corner a vibrant space designed to Share your style, creativity, and memories with the world.</p>
+            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="program-card">
+            <div class="program-icon mb-4">
+              <i class="fas fa-glass-cheers"></i>
+            </div>
+            <h4 class="mb-3">Networking Events</h4>
+            <p class="text-light opacity-75">Connect with industry professionals, designers, and fashion enthusiasts at our exclusive social gatherings.</p>
+            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-6 position-relative">
+  <!-- Top Blur -->
+  
+  <div class="container">
+    <div class="blur-top"></div>
+    <div class="gallery-wrapper">
+      <!-- Top Row -->
+      <div class="gallery-row gallery-row-right">
+        <div class="gallery-item"><img src="./images/gallery1.jpg" alt="Gallery Image 1"></div>
+        <div class="gallery-item"><img src="./images/gallery2.jpg" alt="Gallery Image 2"></div>
+        <div class="gallery-item"><img src="./images/gallery3.jpg" alt="Gallery Image 3"></div>
+        <div class="gallery-item"><img src="./images/gallery5.jpg" alt="Gallery Image 4"></div>
+        <div class="gallery-item"><img src="./images/gallery6.jpg" alt="Gallery Image 5"></div>
+      </div>
+
+      <!-- Middle Row -->
+      <div class="gallery-row gallery-row-left">
+        <div class="gallery-item"><img src="./images/gallery7.JPG" alt="Gallery Image 7"></div>
+        <div class="gallery-item"><img src="./images/gallery8.JPG" alt="Gallery Image 8"></div>
+        <div class="gallery-item"><img src="./images/gallery9.jpg" alt="Gallery Image 9"></div>
+        <div class="gallery-item"><img src="./images/gallery10.JPG" alt="Gallery Image 10"></div>
+        <div class="gallery-item"><img src="./images/gallery11.jpg" alt="Gallery Image 11"></div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="gallery-row gallery-row-right">
+        <div class="gallery-item"><img src="./images/gallery12.jpg" alt="Gallery Image 12"></div>
+        <div class="gallery-item"><img src="./images/gallery13.jpg" alt="Gallery Image 13"></div>
+        <div class="gallery-item"><img src="./images/gallery14.jpg" alt="Gallery Image 14"></div>
+        <div class="gallery-item"><img src="./images/gallery15.jpg" alt="Gallery Image 15"></div>
+        <div class="gallery-item"><img src="./images/gallery16.jpg" alt="Gallery Image 16"></div>
+      </div>
+    </div>
+    <div class="blur-bottom"></div>
+  </div>
+  <!-- Bottom Blur -->
+  
+</section>
+
+  <!-- Celebrities Section -->
+<section id="celebrities" class="py-6 bg-dark">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="section-title display-4 mb-4">Speakers</h2>
+        <p class="text-light opacity-75 mb-0">Meet the iconic personalities joining us for this exciting journey through culture and entertainment.</p>
+      </div>
+    </div>
+
+    <div class="row g-4 text-center">
+      <!-- Single celebrity card -->
+      <div class="col-6 col-md-3">
+        <div class="celebrity-card">
+          <img src="./images/speaker1.png" alt="Yacine Keddou" class="img-fluid rounded mb-2">
+          <h6 class="fw-bold text-uppercase mb-0">Yacine Keddou</h6>
+          <p>Fashion consultant</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="celebrity-card">
+          <img src="./images/speaker2.png" alt="Waridi Wardah" class="img-fluid rounded mb-2">
+          <h6 class="fw-bold text-uppercase mb-0">Waridi Wardah</h6>
+          <p>Fashion contributor - CEO Fashion Africa 254</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="celebrity-card">
+          <img src="./images/speaker3.png" alt="IYASOONY" class="img-fluid rounded mb-2">
+          <h6 class="fw-bold text-uppercase mb-0">IYASOONY</h6>
+          <p>Fashion content creator and Activist</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="celebrity-card">
+          <img src="./images/speaker4.png" alt="Salima Souakri" class="img-fluid rounded mb-2">
+          <h6 class="fw-bold text-uppercase mb-0">Dunya Boukhers</h6>
+          <p>Owner of Isis Dunya</p>
+        </div>
+      </div>
+
+    <div class="row mt-5 text-center">
+      <div class="col">
+        <h3 class="fw-bold">AND MORE ..........</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Celebrities Section -->
+  <section id="celebrities" class="py-6 bg-dark">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title display-4 mb-4">Designers</h2>
+          <p class="text-light opacity-75 mb-0">Meet the talented designers showcasing their unique creations at Oran Fashion Week.</p>
+        </div>
+      </div>
+    
+      <div class="row g-4 text-center">
+        
+            <!-- Designer 1 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Hasnia Couture" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Hasnia Couture</h6>
+                <p>Master of Algerian haute couture, blending tradition with elegance.</p>
+                <a href="https://www.instagram.com/hasniacouture/" target="_blank" class="text-light">Instagram</a>
+              </div>
+            </div>
+        
+            <!-- Designer 2 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Hera Couture" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Hera Couture</h6>
+                <p>Reviving the Blousa Mensouj with ancestral artistry.</p>
+                <a href="https://www.instagram.com/creation_hera/" target="_blank" class="text-light">Instagram</a>
+              </div>
+            </div>
+        
+            <!-- Designer 3 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="BYMELBACH" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">BYMELBACH</h6>
+                <p>A brand of heritage, resistance, and cultural empowerment.</p>
+              </div>
+            </div>
+        
+            <!-- Designer 4 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Houriette" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Houriette</h6>
+                <p>Timeless, eco-conscious fashion celebrating free spirits.</p>
+                <a href="https://www.instagram.com/houriettes_couture/" target="_blank" class="text-light">Instagram</a>
+              </div>
+            </div>
+        
+            <!-- Designer 5 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Aseel Al-Shaar" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Aseel Al-Shaar</h6>
+                <p>Embroidery artist preserving heritage through motifs and workshops.</p>
+              </div>
+            </div>
+        
+            <!-- Designer 6 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Baghli Zoubida" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Baghli Zoubida</h6>
+                <p>Celebrating ethnic elegance with caftans and bridal chedda.</p>
+                <a href="https://www.instagram.com/baghli_khadidja.off/" target="_blank" class="text-light">Instagram</a>
+              </div>
+            </div>
+        
+            <!-- Designer 7 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="KASR EL AMIRA" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">KASR EL AMIRA</h6>
+                <p>Reviving 19th-century elegance with traditional Algerian couture.</p>
+                <a href="https://www.instagram.com/creation_kasr_el_amira_/" target="_blank" class="text-light">Instagram</a>
+              </div>
+            </div>
+        
+            <!-- Designer 8 -->
+            <div class="col-6 col-md-3">
+              <div class="designer-card">
+                <img src="./images/inconnu.jpeg" alt="Abidine" class="img-fluid rounded mb-2">
+                <h6 class="fw-bold text-uppercase mb-0">Abidine</h6>
+                <p>Blending tradition and modernity in ready-to-wear fashion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+      <div class="row mt-5 text-center">
+        <div class="col">
+          <h3 class="fw-bold">AND MORE ..........</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- History Section -->
+<section id="history" class="py-6 position-relative overflow-hidden">
+  
+    <!-- Spark shapes -->
+  <div class="spark">✦</div>
+  <div class="spark">✧</div>
+  <div class="spark">✦</div>
+  <div class="spark">✧</div>
+  <div class="spark">✦</div>
+  <div class="spark">✧</div>
+  
+  <!-- Film strip decoration -->
+  <div class="film-strip film-strip-top"></div>
+  <div class="film-strip film-strip-bottom"></div>
+  
+  
+  <div class="container position-relative" style="max-width: 100%;">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="badge bg-black text-uppercase mb-3">Our Legacy</span>
+        <h2 class="section-title display-4 mb-4 history-title">The History</h2>
+        <p class="text-light opacity-75 mb-0">Explore the rich history of fashion in North Africa, from its roots to its modern-day influence.</p>
+      </div>
+    </div>
+    
+    <div class="external in-viewport">
+      <div class="horizontal-scroll-wrapper">
+        <div class="img-wrapper slower timeline-item">
+          <a href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/" target="_blank" rel="noopener">
+            <img src="./images/gallery8.JPG" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2017</span>
+              <h4 class="timeline-title">First Oran Fashion Week</h4>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img-wrapper faster timeline-item">
+          <a href="https://altphotos.com/photo/retro-boy-doll-wearing-elegant-clothes-330/" target="_blank" rel="noopener">
+            <img src="./images/gallery6.jpg" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">20118</span>
+              <h4 class="timeline-title">First Oran Fashion week</h4>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img-wrapper slower vertical timeline-item">
+          <a href="https://altphotos.com/photo/clocks-shop-exposition-window-reflecting-the-streets-277/" target="_blank" rel="noopener">
+            <img src="./images/gallery5.jpg" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2019</span>
+              <h4 class="timeline-title">Secand Oran Fashion week</h4>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img-wrapper slower slower-down timeline-item">
+          <a href="https://altphotos.com/photo/swans-and-ducks-swimming-in-a-river-264/" target="_blank" rel="noopener">
+            <img src="./images/gallery4.jpg" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2020</span>
+              <h4 class="timeline-title">Third Oran Fashion Week</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="img-wrapper timeline-item">
+          <a href="https://altphotos.com/photo/sidewalk-terrace-of-a-blue-facade-cafe-312/" target="_blank" rel="noopener">
+            <img src="./images/gallery12.JPG" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2021</span>
+              <h4 class="timeline-title">Third Oran Fashion Week</h4>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img-wrapper slower timeline-item">
+          <a href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/" target="_blank" rel="noopener">
+            <img src="./images/gallery3.jpg" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2022</span>
+              <h4 class="timeline-title">Fourth Oran Fashion Week</h4>
+            </div>
+          </a>
+        </div>
+        
+        <div class="img-wrapper slower last timeline-item">
+          <a href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/" target="_blank" rel="noopener">
+            <img src="./images/gallery1.jpg" alt="">
+            <div class="timeline-info">
+              <span class="timeline-date">2024</span>
+              <h4 class="timeline-title">Fifth Oran Fashion Week</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-5 future-vision">
+      <a href="#" class="btn btn-outline-light btn-lg">Our Future Vision <i class="fas fa-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-6">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="badge bg-black text-uppercase mb-3">Get In Touch</span>
+          <h2 class="section-title text-start display-4 mb-4">Contact Us</h2>
+          <p class="text-light opacity-75 mb-5">Have questions about the event? Want to become a sponsor or exhibitor? Reach out to our team.</p>
+          
+          <div class="contact-info d-flex align-items-center mb-4">
+            <div class="contact-icon me-4">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Our Location</h5>
+              <p class="mb-0 text-light opacity-75">Hotel Oran Bay, Oran</p>
+            </div>
+          </div>
+          
+          <div class="contact-info d-flex align-items-center mb-4">
+            <div class="contact-icon me-4">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Email Us</h5>
+              <p class="mb-0 text-light opacity-75">oranfashionweek@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-info d-flex align-items-center">
+            <div class="contact-icon me-4">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Call Us</h5>
+              <p class="mb-0 text-light opacity-75">+213 550 71 34 30</p>
+              <p class="mb-0 text-light opacity-75">+33 634 522 258</p>
+              <p class="mb-0 text-light opacity-75">+968 767 82 909</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="mb-4">
+                <label for="name" class="form-label visually-hidden">Full Name</label>
+                <input type="text" class="form-control form-control-lg" id="name" placeholder="Full Name">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label visually-hidden">Email Address</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Email Address">
+              </div>
+              <div class="mb-4">
+                <label for="subject" class="form-label visually-hidden">Subject</label>
+                <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject">
+              </div>
+              <button type="submit" class="btn btn-accent btn-lg w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/animations.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
