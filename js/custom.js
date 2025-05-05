@@ -147,3 +147,30 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+
+ // Set the event start date
+ const eventDate = new Date('May 11, 2025 00:00:00').getTime();
+
+ // Update the countdown every second
+ const countdownInterval = setInterval(() => {
+   const now = new Date().getTime();
+   const timeLeft = eventDate - now;
+
+   if (timeLeft <= 0) {
+     clearInterval(countdownInterval);
+     document.querySelector('.timer-container').innerHTML = '<p class="text-uppercase mb-2">The event has started!</p>';
+     return;
+   }
+
+   // Calculate days, hours, minutes, and seconds
+   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+   // Update the timer values in the DOM
+   document.querySelector('.timer-container .timer-box:nth-child(1) .timer-value').textContent = days;
+   document.querySelector('.timer-container .timer-box:nth-child(2) .timer-value').textContent = hours;
+   document.querySelector('.timer-container .timer-box:nth-child(3) .timer-value').textContent = minutes;
+ }, 1000);
