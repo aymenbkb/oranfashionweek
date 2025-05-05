@@ -38,9 +38,9 @@ function initCustomCursor() {
     clickables.forEach(element => {
       element.addEventListener('mouseenter', () => {
         gsap.to(cursor, {
-          scale: 1.5,
+          scale: 3.0,
           opacity: 0.7,
-          backgroundColor: 'rgba(147, 112, 219, 0.5)',
+          backgroundColor: 'rgba(147, 112, 219, 0.7)',
           duration: 0.3
         });
       });
