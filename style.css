@@ -1362,6 +1362,9 @@ p {
 
 /* Responsive Adjustments */
 @media (max-width: 991px) {
+  .preloader-logo {
+    font-size: 1.0rem;
+  }
   .hero-title {
     font-size: 3rem;
   }
